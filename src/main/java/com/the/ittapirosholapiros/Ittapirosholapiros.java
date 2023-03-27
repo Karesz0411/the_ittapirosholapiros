@@ -9,7 +9,8 @@ package com.the.ittapirosholapiros;
 public class Ittapirosholapiros {
 
     public static void main(String[] args) {
-        
+        Game call = new Game();
+        call.initialize();
     }
-
+    
 }
