@@ -9,11 +9,12 @@ public class Game {
         Scanner userInput = new Scanner(System.in);
         int number = userInput.nextInt(); 
         System.out.println("A számod: " + number);
+        System.out.println("A győztes szám: " +red);
         if (red == number) {
-            System.out.println("You've won!");
+            System.out.println("Nyertél!");
         }
         else {
-            System.out.println("You've lost. The right nuber was: " + red);
+            System.out.println("Vesztettél!");
         }
     }
 }
