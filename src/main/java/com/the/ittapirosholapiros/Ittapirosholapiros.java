@@ -13,7 +13,7 @@ public class Ittapirosholapiros {
             Call the game class
         */
         Game call = new Game();
-        call.initialize();
+        game_class();
     }
     
 }

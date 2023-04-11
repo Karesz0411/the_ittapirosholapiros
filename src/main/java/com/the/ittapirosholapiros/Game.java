@@ -2,7 +2,7 @@ package com.the.ittapirosholapiros;
 import java.util.*;
 
 public class Game {
-    public void initialize(){
+    public void game_class(){
         Random random = new Random();
         /*
             program choose a random number between 1 and 3
@@ -13,14 +13,14 @@ public class Game {
         */
         System.out.println("Enter a number between 1 and 3");
         Scanner userInput = new Scanner(System.in);
-        int number = userInput.nextInt(); 
+        int user_picked_number = userInput.nextInt(); 
         
-        System.out.println("Your number: " + number);
+        System.out.println("Your number: " + user_picked_number);
         System.out.println("The winning number: " +red_card);
         /*
             Decide whether the user has won
         */
-        if (red_card == number) {
+        if (red_card == user_picked_number) {
             System.out.println("You won!");
         }
         else {
