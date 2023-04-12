@@ -2,11 +2,13 @@ package com.the.ittapirosholapiros;
 
 import java.util.*;
 
+
 /**
  * This class initialize the game   
  */
 public class Game {
     public void initialize() {
+
         Random random = new Random();
         /**
          * program choose a random number between 1 and 3

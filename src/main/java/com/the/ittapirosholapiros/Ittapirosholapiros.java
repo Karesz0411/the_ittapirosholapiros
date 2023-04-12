@@ -12,8 +12,12 @@ public class Ittapirosholapiros {
         /*
             Call the game class
         */
-        Game game = new Game();
-        game.initialize();
+        
+        GUI game_display = new GUI();
+        game_display.display();
+        
+        //Game game = new Game();
+        //game.initialize();
     }
     
 }
