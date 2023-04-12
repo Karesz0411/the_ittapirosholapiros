@@ -13,6 +13,7 @@ public class GUI{
         int position_y = 200;
         int width = 350;
         int height = 200;
+        
         /**
          * Create the GUI frame
          */
@@ -26,9 +27,11 @@ public class GUI{
          * Create the panel
          */
         JPanel gui_panel = new JPanel();
-        gui_frame.add(gui_panel);
         gui_panel.setBackground(Color.CYAN);
-        gui_panel.setBounds(position_x, position_y, width, height);
+        gui_panel.setBounds(0, 0, width, height);
+        gui_panel.setLayout(null);
+        gui_panel.setVisible(true);
+        gui_frame.add(gui_panel);
         
     }
 }
