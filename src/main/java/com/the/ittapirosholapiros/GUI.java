@@ -49,5 +49,17 @@ public class GUI{
         want_to_play_game.setHorizontalAlignment(0);
         want_to_play_game.setForeground(Color.DARK_GRAY);
         gui_panel.add(want_to_play_game);
+        /**
+         * Create some button
+         */
+        JButton say_yes_button = new JButton("Yes");
+        say_yes_button.setLocation(200, 400);
+        say_yes_button.setSize(200, 120);
+        gui_panel.add(say_yes_button);
+        
+        JButton say_no_button = new JButton("no");
+        say_no_button.setLocation(650, 400);
+        say_no_button.setSize(200, 120);
+        gui_panel.add(say_no_button);
     }
 }
