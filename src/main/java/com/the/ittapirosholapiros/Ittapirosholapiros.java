@@ -9,9 +9,9 @@ package com.the.ittapirosholapiros;
 public class Ittapirosholapiros {
 
     public static void main(String[] args) {
-        /*
-            Call the game class
-        */
+        /**
+         * Call the game class
+         */
         
         GUI game_display = new GUI();
         game_display.display();

@@ -44,6 +44,9 @@ public class Game {
                 break;
             default:
                 is_game_valid = false;
+        /**
+         ***********************************************************************
+         */
         }
         if (is_game_valid == true) {
             System.out.println("Your number: " + user_picked_number);
@@ -68,7 +71,9 @@ public class Game {
         System.out.println("Type anything else to stop the game!");
         Scanner continue_game = new Scanner(System.in); 
         int want_to_play_again = continue_game.nextInt(); 
-        
+        /**
+         ***********************************************************************
+         */
         if(want_to_play_again == 0){
             this.initialize();        
         }

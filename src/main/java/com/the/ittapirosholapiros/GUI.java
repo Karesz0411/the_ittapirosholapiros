@@ -55,11 +55,24 @@ public class GUI{
         JButton say_yes_button = new JButton("Yes");
         say_yes_button.setLocation(200, 400);
         say_yes_button.setSize(200, 120);
-        gui_panel.add(say_yes_button);
+        /**
+         * Add a click action to the yes button
+         */
+        say_yes_button.addActionListener(e->{
+        Game game = new Game();
+        game.initialize();
+        });
         
-        JButton say_no_button = new JButton("no");
+        gui_panel.add(say_yes_button);
+        /**
+         ***********************************************************************
+         */
+        JButton say_no_button = new JButton("No");
         say_no_button.setLocation(650, 400);
         say_no_button.setSize(200, 120);
+        say_no_button.addActionListener(e->{
+        System.exit(0);
+        });   
         gui_panel.add(say_no_button);
     }
 }
