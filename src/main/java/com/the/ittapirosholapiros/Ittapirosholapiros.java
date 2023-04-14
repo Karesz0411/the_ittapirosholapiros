@@ -7,7 +7,9 @@ package com.the.ittapirosholapiros;
  * @author Mihály Károly
  */
 public class Ittapirosholapiros {
-
+    /**
+     * //TODO: write doc comment for function 
+     */
     public static void main(String[] args) {
         /**
          * Call the game class

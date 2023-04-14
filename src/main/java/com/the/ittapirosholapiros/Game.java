@@ -7,7 +7,9 @@ import java.util.*;
  * This class initialize the game   
  */
 public class Game {
-    
+    /**
+     * //TODO: write doc comment for function 
+     */
     public void initialize() {
 
         Random random = new Random();
@@ -45,7 +47,7 @@ public class Game {
                 break;
             default:
                 is_game_valid = false;
-        /**
+        /*
          ***********************************************************************
          */
         }
@@ -65,17 +67,17 @@ public class Game {
         else{
             System.out.println("The game is invalid. You have to choose number, between 1 and 3.");
         }
-        /**
+        /*
          * Let's decide to play again or exit
          */
         System.out.println("Type 0 for one more game!");
         System.out.println("Type anything else to stop the game!");
         Scanner continue_game = new Scanner(System.in); 
         int want_to_play_again = continue_game.nextInt(); 
-        /**
+        /*
          ***********************************************************************
          */
-        if(want_to_play_again == 0){
+        if(want_to_play_again == 0) {
             this.initialize();        
         }
         else{

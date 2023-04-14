@@ -2,11 +2,13 @@ package com.the.ittapirosholapiros;
 
 import javax.swing.*;
 import java.awt.*;
+/**
+ * Create the class, and the function
+ */
+public class GUI {
     /**
-    * Create the class, and the function
-    */
-public class GUI{
-    
+     * //TODO: write doc comment for function 
+     */
     public void display() {
         int position_x = 200;
         int position_y = 50;
@@ -41,7 +43,7 @@ public class GUI{
         game_title_label.setHorizontalAlignment(0);
         game_title_label.setForeground(Color.RED);
         gui_panel.add(game_title_label);
-        /**
+        /*
          ***********************************************************************
          */
         JLabel want_to_play_game = new JLabel("Do you want to play?");
@@ -50,7 +52,7 @@ public class GUI{
         want_to_play_game.setHorizontalAlignment(0);
         want_to_play_game.setForeground(Color.DARK_GRAY);
         gui_panel.add(want_to_play_game);
-        /**
+        /*
          * Create some button
          */
         JButton say_yes_button = new JButton("Yes");
@@ -62,7 +64,7 @@ public class GUI{
         });
         
         gui_panel.add(say_yes_button);
-        /**
+        /*
          ***********************************************************************
          */
         JButton say_no_button = new JButton("No");

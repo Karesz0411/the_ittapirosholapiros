@@ -9,15 +9,14 @@ import java.util.Random;
 /**
  * Create the gui of the game
  */
-public class GUI_of_the_game extends JFrame{
-    //public int player_choosed_number = 0;
+public class GUI_of_the_game extends JFrame {
     public int machine_choosed_number = 0;
     public int current_iteration = 0;
-        
-        
-        
     
-    public void game_display(){
+    /**
+     * //TODO: write doc comment for function 
+     */
+    public void game_display() {
         Random random = new Random();
         /**
          * program choose a random number between 1 and 3
@@ -56,43 +55,32 @@ public class GUI_of_the_game extends JFrame{
         game_gui_panel.add(ingame_title_label);
         
         /**
-         * Create the variable of a player choosed number
-         */
-        
-        
-        /**
          * Let's create the pickable cards, as a buttons
          */
-        for (current_iteration = 1; current_iteration<4; current_iteration++){
+        for (current_iteration = 1; current_iteration<4; current_iteration++) {
             JButton card =  new JButton (new ImageIcon("C:\\\\Users\\Admin\\Desktop\\Projects\\holapiros\\the_ittapirosholapiros\\src\\main\\java\\com\\the\\Card_pictures\\Card_back.png"));   
             card.setLocation(current_iteration*300-200, 200);
             card.setSize(200, 120);
             card.addActionListener(new ActionListener()
         {
             @Override
-            public void actionPerformed(ActionEvent event){
-                //System.out.println("working: "+ player_choosed_number);   
+            public void actionPerformed(ActionEvent event) {  
                 int player_choosed_number = current_iteration; 
                 System.out.println(machine_choosed_number);
                 System.out.println(player_choosed_number);
                 System.out.println(current_iteration);
-                if (player_choosed_number == machine_choosed_number) {
-                    System.out.println("You won!");
-                }
-                else {
-                    System.out.println("You lost");           
-                }   
+                    if (player_choosed_number == machine_choosed_number) {
+                        System.out.println("You won!");
+                    }
+                    else {
+                        System.out.println("You lost");           
+                    }   
             }
-        }
-        );
+        } );
         game_gui_panel.add(card);
         
         }
-        
-        
-        
-        
-        
+
     }
 
 }
