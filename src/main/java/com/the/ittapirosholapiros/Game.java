@@ -7,6 +7,7 @@ import java.util.*;
  * This class initialize the game   
  */
 public class Game {
+    
     public void initialize() {
 
         Random random = new Random();

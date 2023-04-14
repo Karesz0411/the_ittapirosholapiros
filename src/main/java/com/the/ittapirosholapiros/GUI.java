@@ -6,6 +6,7 @@ import java.awt.*;
     * Create the class, and the function
     */
 public class GUI{
+    
     public void display() {
         int position_x = 200;
         int position_y = 50;
@@ -55,9 +56,6 @@ public class GUI{
         JButton say_yes_button = new JButton("Yes");
         say_yes_button.setLocation(200, 400);
         say_yes_button.setSize(200, 120);
-        /**
-         * Add a click action to the yes button
-         */
         say_yes_button.addActionListener(e->{
         Game game = new Game();
         game.initialize();
